@@ -7,6 +7,8 @@
 
 [![Build
 Status](https://travis-ci.org/martinezsebastian/rpkg.svg?branch=master)](https://travis-ci.org/martinezsebastian/rpkg)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/martinezsebastian/rpkg?branch=master&svg=true)](https://ci.appveyor.com/project/martinezsebastian/rpkg)
 <!-- badges: end -->
 
 The goal of rpkg is to …
