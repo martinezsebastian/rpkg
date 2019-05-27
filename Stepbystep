@@ -38,3 +38,9 @@ Install and Restart
 Check (Locally)
 Add, Commit, Push
 Check with Travis
+
+Add travis badge to the top of the Readme to signal to people that the build is working as intended. 
+
+
+Vignettes
+A Vigne

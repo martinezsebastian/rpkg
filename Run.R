@@ -45,3 +45,5 @@ df_epil <- as.data.frame(DT.epil) %>% dplyr::select(y, trt, post, subject, tj)
 
 # write data in correct format to data folder ----
 usethis::use_data(df_epil, overwrite = TRUE)
+
+usethis::use_vignette(name = "Introduction_to_the_package")
