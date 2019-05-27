@@ -1,0 +1,19 @@
+Step by step
+
+
+
+# Include data
+Place raw dataset in the raw-data folder
+Manipulate data
+
+run 
+usethis::use_data(datafile, overwrite = TRUE)
+
+Write documentation in a new file, call it data.R, store it in the "R" folder
+We need to do this because the data file does not have a place for us to write the documentation, so we have to do it separately
+Then we run:
+devtools::document()
+so that we can load the documentation
+¿This runs roxygen2?
+
+
