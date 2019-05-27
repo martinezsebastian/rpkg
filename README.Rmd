@@ -15,6 +15,7 @@ knitr::opts_chunk$set(
 # rpkg
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.org/martinezsebastian/rpkg.svg?branch=master)](https://travis-ci.org/martinezsebastian/rpkg)
 <!-- badges: end -->
 
 The goal of rpkg is to ...
@@ -38,7 +39,7 @@ devtools::install_github("martinezsebastian/rpkg")
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-library(rpkg)
+#library(rpkg)
 ## basic example code
 ```
 
