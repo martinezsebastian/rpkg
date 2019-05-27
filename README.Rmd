@@ -57,3 +57,5 @@ plot(pressure)
 ```
 
 In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
+
+These are also a whole bunch of things I can do. 
