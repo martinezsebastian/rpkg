@@ -5,8 +5,6 @@
 
 <!-- badges: start -->
 
-[![Travis build
-status](https://travis-ci.org/martinezsebastian/rpkg.svg?branch=master)](https://travis-ci.org/martinezsebastian/rpkg)
 <!-- badges: end -->
 
 The goal of rpkg is to …
