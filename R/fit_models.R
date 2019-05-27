@@ -15,15 +15,13 @@
 #'  \code{\link[sjPlot]{tab_model}}
 #' @rdname fit_models
 #' @export 
-#' @importFrom lme4 glmer
-#' @importFrom sjPlot tab_model
 fit_models <- function(formula, data) {
-  
+  # Comment
   fit.glmm <- lme4::glmer(formula, 
                           data = data, 
                           family = "poisson", 
                           offset = log(tj))
-  
+  # Another comment
   sjPlot::tab_model(fit.glmm)
   
 }
