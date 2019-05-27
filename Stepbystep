@@ -7,13 +7,34 @@ Place raw dataset in the raw-data folder
 Manipulate data
 
 run 
-usethis::use_data(datafile, overwrite = TRUE)
+    usethis::use_data(datafile, overwrite = TRUE)
 
 Write documentation in a new file, call it data.R, store it in the "R" folder
 We need to do this because the data file does not have a place for us to write the documentation, so we have to do it separately
 Then we run:
-devtools::document()
+    devtools::document()
 so that we can load the documentation
 ¿This runs roxygen2?
 
+The last line has the name of the dataset
 
+
+# Creating a function
+Make a function file
+save the function
+
+run
+    sinew::makeOxyFile("R/functionname.R")
+
+This reads the function and creates an oxy_functionname.R file which contains the original function and the template for the documentation. Copy the contents from this oxy_functionname.R into functionname.R, and fill out what's necessary
+
+
+
+Final stage:
+run
+    devtools::document()
+
+Install and Restart
+Check (Locally)
+Add, Commit, Push
+Check with Travis

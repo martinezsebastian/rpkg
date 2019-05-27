@@ -17,6 +17,7 @@
 #' @export 
 fit_models <- function(formula, data) {
   # Comment
+  tj <- NULL
   fit.glmm <- lme4::glmer(formula, 
                           data = data, 
                           family = "poisson", 
