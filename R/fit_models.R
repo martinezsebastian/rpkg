@@ -23,8 +23,8 @@ fit_models <- function(formula, data) {
                           family = "poisson", 
                           offset = log(tj))
   # Another comment
-  sjPlot::tab_model(fit.glmm)
-  
+  out <- sjPlot::tab_model(fit.glmm)
+  return(out)
 }
 
 # example of how to use the function

@@ -41,6 +41,23 @@ Check with Travis
 
 Add travis badge to the top of the Readme to signal to people that the build is working as intended. 
 
+We can do something similar with appveyor to test the package with Windows.
+Remember to use the usethis::appveyor() command to add the app veyor .yml file
+
+In order to submit to CRAN, you need to submit the evidence that your program passed the Windows test:
+run
+    devtools::
+
 
 Vignettes
-A Vigne
+A Vignette is a story of how I use my package
+
+
+Build tests for the packages
+Code coverage shows how much of each function is covered by tests defined by the author of the package
+
+Run
+    usethis::use_testthat()
+
+Write test
+Save test in testthat folder

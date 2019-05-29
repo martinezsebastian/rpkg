@@ -47,3 +47,15 @@ df_epil <- as.data.frame(DT.epil) %>% dplyr::select(y, trt, post, subject, tj)
 usethis::use_data(df_epil, overwrite = TRUE)
 
 usethis::use_vignette(name = "Introduction_to_the_package")
+
+fit.glmm <- lme4::glmer(y ~ trt*post + (1|subject), 
+                        data = df_epil, 
+                        family = "poisson", 
+                        offset = log(tj))
+class(fit.glmm)
+a <- sjPlot::tab_model(fit.glmm)
+
+b <- expect_true(inherits(a, what = "sjTable"))
+
+lme4::glFormula(formula = y ~ (1 | subject), data = data, family = "poisson", offset = log(tj))
+glFormula
